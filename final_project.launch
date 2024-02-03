@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find final_project)/launch/turtlebot3_world.launch"> </include>
+  <include file="$(find final_project)/launch/qr_visp.launch"> </include>
+  <include file="$(find hello_ros)/launch/navigation.launch"> </include>
+  <node pkg="hello_ros" name="fixed_qr_camera_tf_broadcaster" type="fixed_qr_camera_tf_broadcaster.py"> </node>
+
+</launch>
